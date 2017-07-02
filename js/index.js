@@ -34,6 +34,7 @@ function search(entry){
 	$(".input:focus").css("width", "30vw");
 	$(".title").css("font-size", "150%");
 	$(".result-header").css("visibility", "visible");
+	window.scrollTo(0, 0);
 
 	get10Entries();
 }
@@ -54,10 +55,10 @@ function get10Entries(){
 
     	var container = document.getElementById("result-page");
     	if(!result.hasOwnProperty("query") && gsroffset <= 10){
-    		alert("no results");
     		$(".result-page").css("visibility", "hidden");
     		$(".no-results").html('<h3>No search results found for "' + inputVal + '".</h3>');
     		$(".no-results").css("visibility", "visible");
+    		$("body").css("overflow", "hidden");
     	} else {
     		console.log("new result page");
 	    	$(".no-results").css("visibility", "hidden");
