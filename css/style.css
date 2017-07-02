@@ -1,0 +1,198 @@
+body{
+	background-color: #fafafa;
+	font-size: 15px;
+	font-family: 'Open Sans';
+	overflow: hidden;
+}
+
+.center{
+	text-align: center;
+}
+.main-page{
+	height: 100vh;
+	min-width: 300px;
+	visibility: visible;
+}
+
+.result-page{
+	min-height: 100vh;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-top: 70px;
+	text-align: center;
+}
+.title{
+	font-family: 'Source Serif Pro';
+	font-size: 350%;
+	font-weight: bolder;
+	letter-spacing: 4px;
+	text-decoration: none;
+	color: inherit;
+}
+.title-box{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.top-container {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 200px;
+  transform: translate(-50%, -90%);
+}
+.submit-random{
+	text-decoration: none;
+	color: inherit;
+	padding: 6px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 15px;
+	letter-spacing: 0.3px;
+	background: white;
+	font-weight: normal;
+		opacity: 0.8;
+	border: 1px solid grey;
+	font-size: 74%;
+}
+.submit-random:hover {
+	border: 1px solid black;
+	cursor: pointer;
+
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: grey;
+  font-weight: lighter;
+  font-size: 100%;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: grey;
+  font-weight: lighter;
+  font-size: 100%;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: grey;
+  font-weight: lighter;
+  font-size: 100%;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: grey;
+  font-weight: lighter;
+  font-size: 10%;
+}
+input{
+	outline:0;
+	width: 30vw;
+	max-width: 400px;
+	min-width: 100px;
+	text-align: left;
+	padding-left:  20px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	box-sizeing: border-box;
+	margin: 3px 0;
+	font-family: 'Open sans';
+	font-size: 100%;
+	color: grey;
+	background-color: #FFF;
+	border: 1px solid grey;
+    left-top-border-radius: 3px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.35s ease-in-out;
+    margin-bottom: 30px;
+    border-right: none;
+}
+input:focus {
+
+	border: 1px solid black;
+    background-color: white;
+    border-right: none;
+    color: black;
+    placeholder: none;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.submit-search{
+	background-color: black;
+	outline: none;
+	border: none;
+	height: 34px;
+	transform: translate(0px, 7px);
+	margin-left: -4px;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: 0.1s ease-in-out;
+}
+.submit-search:hover{
+	opacity: 1;
+}
+.search-icon{
+	content: url("https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../assets/preview/2012/png/iconmonstr-magnifier-2.png&r=255&g=255&b=255");
+	height: 16px;
+	padding: 5px;
+	margin-top: 2px;
+	transition: 0.1s ease-in-out;
+}
+.entry-box{
+	display: inline-block;
+	text-align: left;
+	width: 400px;
+	margin: 0 auto;
+	text-decoration: none;
+	color: inherit;
+	background-color: white;
+}
+.entry-box:hover {
+	transform: scale(1.01);
+	cursor: pointer;
+	opacity: 0.6;
+}
+.entry-desc{
+	display: inline-block;
+	font-size: 75%;
+}
+.entry-title{
+	margin: 0;
+	display: inline-block;
+	font-size: 85%;
+}
+.entry-text{
+	transform: translate(0px, -30px);
+	width: 250px;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top; -5px;
+	margin-bottom; 0px;
+	display: inline-block;
+}
+.entry-image-container{
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	text-align: center;
+	display: inline-block;
+}
+.entry-img{
+	height: 100%;
+	vertical-align: middle;
+}
+.result-header{
+	position: fixed;
+	width: 100vw;
+	background-color: #fafafa;
+	top: 0;
+	height: 54px;
+    padding-top: 10px;
+	visibility: hidden;
+}
+.no-results{
+	position: absolute;
+	width: 100%;
+	margin-top: 200px;
+	text-align: center;
+	visibility: hidden;
+	font-size: 80%;
+}

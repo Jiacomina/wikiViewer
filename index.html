@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<title>Wikipedia Viewer | Jiacomina</title>
+		<link rel="stylesheet" href="css/style.css">
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+		<script src = "js/index.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:600|Open+Sans" rel="stylesheet">
+	</head>
+	<body>
+		<div class = "main-page page">
+			<div class = "top-container">
+			<div class = "title-box">
+				<a href = "https://en.wikipedia.org/wiki/Main_Page" class = "title center">WIKIPEDIA</a>
+				</div>
+				<br>
+				<center>
+				<input onClick="this.setSelectionRange(0, this.value.length)" type="text" id="input1" class = "input" placeholder = "Search"  onkeyup="this.setAttribute('value', this.value);" value="" >
+				<button id = "submit-search" class = "submit-search"><img class = "search-icon"></button><br>
+				<a class = "submit-random" href = "https://en.wikipedia.org/wiki/Special:Random "target = "_blank">Get Random Article</a>
+				</center>
+			</div>
+		</div>
+		<div class = "no-results"></div>
+		<div class = "result-page page" id = "result-page">No search results.
+		</div>
+		<div class = "result-header">
+						<center>
+				<a href = "javascript:history.go(0)" class = "title center">WIKIPEDIA</a>
+				<input onClick="this.setSelectionRange(0, this.value.length)" type="text" id="input2" class = "input" placeholder = "Search"  onkeyup="this.setAttribute('value', this.value);" value="" >
+				<button id = "submit-search" class = "submit-search"><img class = "search-icon"></button>
+				<a class = "submit-random" href = "https://en.wikipedia.org/wiki/Special:Random "target = "_blank">Get Random Article</a>
+				</center>
+		</div>
+	</body>
+</html>
